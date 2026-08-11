@@ -1,0 +1,33 @@
+# Completar con la identidad visual real del sello.
+# Hasta entonces, el skill debe preguntar antes de inventar valores.
+
+name: strlac
+tagline: "colectivo tecno-biológico de músicas mutantes, arte sonoro y otras aventuras sónicas."
+
+colors:
+  bg: "#ffffff"
+  fg: "#000000"
+  accent: "#ff8f00"
+  mute: "#5a5a5a"
+  line: "#e0e0e0"
+
+type:
+  display: null
+  body: null
+  mono: null
+
+logo:
+  primary: brand/logo/logo-black.png    # negro transparente (fondos claros / docs)
+  white: brand/logo/logo-white.png      # blanco transparente (fondos oscuros / stories)
+  original: brand/logo/logo.png         # original de strlac.xyz
+  orange: brand/logo/logo-naranja.png
+  public_primary: /brand/logo-black.png
+  public_white: /brand/logo.png
+  public_orange: /brand/logo-naranja.png
+  clearspace: null
+  source: https://www.strlac.xyz/logo.png
+
+links:
+  web: https://strlac.xyz/
+  bandcamp: https://strlacrecords.bandcamp.com/
+  vol1: https://vol1.strlac.xyz/

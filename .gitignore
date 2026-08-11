@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# synced from docs/ on predev/prebuild
+/public/docs/
+
 # production
 /build
 
