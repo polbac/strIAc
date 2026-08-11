@@ -13,6 +13,19 @@ Abre [http://localhost:3000](http://localhost:3000).
 
 `predev` / `prebuild` sincronizan `docs/` → `public/docs/` para que el cliente las cargue.
 
+## Deploy (Vercel)
+
+Tiene que ser un proyecto **Next.js**, no un sitio estático.
+
+En Project Settings → General:
+
+- **Framework Preset:** Next.js
+- **Root Directory:** vacío (la raíz del repo)
+- **Output Directory:** override **apagado** (vacío)
+- **Build Command:** `npm run build` (o default)
+
+Si Output Directory queda en `public` o `docs`, `/` da 404.
+
 ## Estructura
 
 | Ruta | Uso |
