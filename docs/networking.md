@@ -14,14 +14,6 @@ Este documento centraliza los sellos, colectivos y plataformas afines con los qu
 *   **Vínculo con strlac:** Proximidad geográfica y estética en la noche experimental porteña.
 *   **Sinergia potencial:** Eventos conjuntos, cruce de artistas del roster.
 
-### Auratekh
-*   **Perfil:** Sello y ciclo orientado al techno industrial, noise, diseño de sonido abrasivo y experimentación de hardware en vivo.
-*   **Origen:** Buenos Aires, Argentina.
-*   **Plataforma:** [SoundCloud](https://soundcloud.com/auratekh)
-*   **Referentes/Fundadores:** [A definir / contacto por redes]
-*   **Vínculo con strlac:** Afinidad en el procesamiento crudo del sonido y la cultura del *live set* maquínico.
-*   **Sinergia potencial:** Co-curaduría de eventos nocturnos / presentaciones en vivo de nuestros artistas de ruidismo.
-
 ### Volante Discos
 *   **Perfil:** Sello discográfico e iniciativa de archivo dedicada al post-punk, synth wave, industrial, música concreta y formatos físicos limitados (principalmente cassettes).
 *   **Origen:** Buenos Aires, Argentina.
@@ -34,6 +26,14 @@ Este documento centraliza los sellos, colectivos y plataformas afines con los qu
 
 ## 2. Nodos Internacionales
 
+### Auratekh
+*   **Perfil:** Sello y ciclo orientado al techno industrial, noise, diseño de sonido abrasivo y experimentación de hardware en vivo.
+*   **Origen:** 
+*   **Plataforma:** [SoundCloud](https://soundcloud.com/auratekh)
+*   **Referentes/Fundadores:** [A definir / contacto por redes]
+*   **Vínculo con strlac:** Afinidad en el procesamiento crudo del sonido y la cultura del *live set* maquínico.
+*   **Sinergia potencial:** Co-curaduría de eventos nocturnos / presentaciones en vivo de nuestros artistas de ruidismo.
+  
 ### Infinite Machine
 *   **Perfil:** Sello de culto en la electrónica de vanguardia global. Sonido clínico, cyber-club, bass deconstruido, ambient cinemático y diseño visual de alto impacto.
 *   **Origen:** Fundado en México (por Charlie/Santiago Leyba), con operaciones distribuidas (Montreal/Berlín).
