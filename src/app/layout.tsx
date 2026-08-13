@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Syne, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
 const syne = Syne({
@@ -35,7 +36,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="es"
       className={`${syne.variable} ${plex.variable} ${plexMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="h-full min-h-full flex flex-col">
+        <TooltipProvider>
+          <div className="flex h-full min-h-0 flex-1 flex-col">{children}</div>
+        </TooltipProvider>
+      </body>
     </html>
   );
 }

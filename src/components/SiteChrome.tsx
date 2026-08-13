@@ -27,6 +27,9 @@ export function SiteHeader() {
         />
       </Link>
       <nav className="site-nav" aria-label="Principal">
+        <Link href="/" className={pathname === "/" ? "is-active" : undefined}>
+          brainstorming
+        </Link>
         <Link href="/docs" className={inDocs ? "is-active" : undefined}>
           docs
         </Link>
