@@ -1,4 +1,4 @@
-# Alianzas y Ecosistema (Networking)
+# Networking
 
 Este documento centraliza los sellos, colectivos y plataformas afines con los que strlac records comparte búsquedas estéticas, metodologías de publicación o proximidad territorial. Es una lista viva diseñada para expandirse.
 

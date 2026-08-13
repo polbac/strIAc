@@ -1,3 +1,3 @@
 # (redirigido)
 
-Alianzas y ecosistema: [docs/networking.md](../../../docs/networking.md)
+Networking: [docs/networking.md](../../../docs/networking.md)

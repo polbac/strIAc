@@ -136,7 +136,7 @@ Release intake
 - Copy: seguir [voz.md](voz.md). Mencionar siempre las capas (digital / web / físico / evento si hay).
 - Visual: [visual.md](visual.md).
 - Al cerrar: actualizar [catalogo.md](catalogo.md) y strlac.xyz si corresponde.
-- Difusión / nodos afines: [networking.md](networking.md).
+- Networking: [networking.md](networking.md).
 
 ## Orden operativo
 

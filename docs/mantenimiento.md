@@ -126,6 +126,6 @@ Detalle, stack (Navidrome, etc.) y TBD → **[radio.md](radio.md)**.
 
 ---
 
-## Alianzas — ver doc dedicada
+## Networking — ver doc dedicada
 
 Sellos, colectivos y plataformas afines → **[networking.md](networking.md)**.

@@ -52,7 +52,7 @@ export const DOC_NAV: DocNavItem[] = [
   },
   {
     slug: "networking",
-    title: "Alianzas",
+    title: "Networking",
     blurb: "Sellos, colectivos y nodos afines",
   },
 ];
