@@ -50,6 +50,11 @@ export const DOC_NAV: DocNavItem[] = [
     title: "Automatización",
     blurb: "Unidades a automatizar",
   },
+  {
+    slug: "networking",
+    title: "Alianzas",
+    blurb: "Sellos, colectivos y nodos afines",
+  },
 ];
 
 export function docPath(slug: string) {

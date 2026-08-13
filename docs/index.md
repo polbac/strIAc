@@ -14,6 +14,7 @@ Usar estos docs para humanos y para agentes (el skill de Cursor los lee desde aq
 6. [Mantenimiento](mantenimiento.md) — tareas recurrentes (stories 2× semana, newsletter, etc.)
 7. [Radio](radio.md) — señal propia: loop + invocaciones de artistas (Navidrome / TBD)
 8. [Automatización](automatizacion.md) — mapa de automatizaciones previstas
+9. [Alianzas y ecosistema](networking.md) — sellos, colectivos y plataformas afines
 
 ## Recursos del repo
 
@@ -34,3 +35,4 @@ Usar estos docs para humanos y para agentes (el skill de Cursor los lee desde aq
 - Un release nuevo → actualizar [catalogo.md](catalogo.md) y `src/lib/catalog.ts`
 - Cambio de voz/visual → [voz.md](voz.md) / [visual.md](visual.md) + `brand/tokens.yaml`
 - Nuevo flujo automatizado → [automatizacion.md](automatizacion.md)
+- Nodos / alianzas → [networking.md](networking.md)

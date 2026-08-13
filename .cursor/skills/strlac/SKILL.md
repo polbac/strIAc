@@ -26,6 +26,7 @@ La documentación canónica está en `docs/` del repo. **Leer desde ahí** (no d
 | [docs/catalogo.md](../../../docs/catalogo.md) | Releases y patrones |
 | [docs/workflows.md](../../../docs/workflows.md) | Intake, assets, publicación |
 | [docs/automatizacion.md](../../../docs/automatizacion.md) | Unidades a automatizar |
+| [docs/networking.md](../../../docs/networking.md) | Sellos, colectivos y nodos afines |
 | [brand/tokens.yaml](../../../brand/tokens.yaml) | Colores / tipo / logo (WIP) |
 
 Índice: [docs/index.md](../../../docs/index.md)
