@@ -123,3 +123,9 @@ Usar como punto de partida hasta cerrar el contenido real:
 Señal propia (metodología radio): playlists en loop + invocaciones de artistas.
 
 Detalle, stack (Navidrome, etc.) y TBD → **[radio.md](radio.md)**.
+
+---
+
+## Alianzas — ver doc dedicada
+
+Sellos, colectivos y plataformas afines → **[networking.md](networking.md)**.

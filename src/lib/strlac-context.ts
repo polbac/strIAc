@@ -7,6 +7,10 @@ const DOC_FILES = [
   "visual.md",
   "catalogo.md",
   "workflows.md",
+  "mantenimiento.md",
+  "radio.md",
+  "automatizacion.md",
+  "networking.md",
 ] as const;
 
 let cached: string | null = null;

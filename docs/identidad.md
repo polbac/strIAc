@@ -37,7 +37,8 @@ No usar: Sterlac, Strlac Music, “the Strlac brand”.
 3. **Bilingüe selectivo.** Español por defecto. Inglés en paralelo cuando el release ya lo usa o la circulación lo pide. No mezclar idiomas en la misma frase sin intención.
 4. **Lenguaje inclusivo del sello.** Respetar formas que ya usa el proyecto (`todxs`, `lxs`, `compositorxs`, `Latigx`).
 5. **Curaduría colectiva.** Tono de plataforma curada, no corporativo.
-6. **No inventar.** Roster, fechas, catálogo numbers, precios o créditos solo con datos reales.
+6. **Ecosistema.** Sellos, colectivos y nodos afines viven en [networking.md](networking.md); no inventar alianzas.
+7. **No inventar.** Roster, fechas, catálogo numbers, precios o créditos solo con datos reales.
 
 ## Qué no es strlac
 

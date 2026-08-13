@@ -1,6 +1,6 @@
 # Documentación strlac
 
-Fuente de verdad del sello: identidad, voz, visual, catálogo y flujos de trabajo.
+Fuente de verdad del sello: identidad, voz, visual, catálogo, flujos de trabajo y alianzas.
 
 Usar estos docs para humanos y para agentes (el skill de Cursor los lee desde aquí).
 

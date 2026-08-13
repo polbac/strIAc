@@ -43,3 +43,5 @@ Todo proyecto sigue el flujo de [workflows.md](workflows.md):
 5. **Créditos colectivos** — agradecimientos a artistas; a veces firma corta (“Faktor, Pol, Nix. Strlac.”)
 
 Estos patrones sirven para curaduría, copy y para decidir qué assets pedir en el intake.
+
+Sellos y colectivos afines (no son catálogo propio): [networking.md](networking.md).

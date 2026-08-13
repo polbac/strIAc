@@ -1,6 +1,6 @@
 # Automatización
 
-Mapa de unidades a automatizar. El skill de Cursor y futuros scripts deben basarse en [`docs/`](index.md), el proceso de [`workflows.md`](workflows.md) y [`brand/tokens.yaml`](../brand/tokens.yaml).
+Mapa de unidades a automatizar. El skill de Cursor y futuros scripts deben basarse en [`docs/`](index.md), el proceso de [`workflows.md`](workflows.md), las alianzas de [`networking.md`](networking.md) y [`brand/tokens.yaml`](../brand/tokens.yaml).
 
 ## Alineado al proceso de release
 
