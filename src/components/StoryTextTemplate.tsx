@@ -4,6 +4,7 @@ import { useState } from "react";
 import { slugifyStoryName } from "@/lib/story";
 import {
   StoryExportButton,
+  StoryFitText,
   StoryFrameChrome,
   StoryPreview,
   StoryZoomField,
@@ -56,9 +57,14 @@ export function StoryTextTemplate() {
       <StoryPreview previewScale={previewScale} frameRef={frameRef}>
         <StoryFrameChrome logoSrc={logoSrc}>
           <div className="story-text-slot">
-            <p className={`story-text-body${text ? "" : " is-placeholder"}`}>
+            <StoryFitText
+              className={`story-text-body${text ? "" : " is-placeholder"}`}
+              maxFontSize={64}
+              minFontSize={28}
+              mode="box"
+            >
               {text || "tu texto"}
-            </p>
+            </StoryFitText>
           </div>
         </StoryFrameChrome>
       </StoryPreview>

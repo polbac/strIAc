@@ -655,6 +655,11 @@ a {
   padding: 96px 72px 88px;
 }
 
+.story-frame > * {
+  min-width: 0;
+  max-width: 100%;
+}
+
 .story-frame-top {
   display: flex;
   flex-direction: column;
@@ -718,6 +723,7 @@ a {
 
 .story-text-body {
   margin: 0;
+  width: 100%;
   max-width: 860px;
   font-family: var(--font-display);
   font-weight: 800;
@@ -736,6 +742,8 @@ a {
 
 .story-meta {
   text-align: center;
+  width: 100%;
+  min-width: 0;
 }
 
 .story-artist {
@@ -749,12 +757,15 @@ a {
 
 .story-release-title {
   margin: 0;
+  width: 100%;
+  min-width: 0;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 64px;
   line-height: 1.05;
   letter-spacing: -0.03em;
   text-transform: uppercase;
+  white-space: nowrap;
   color: transparent;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(

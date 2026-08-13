@@ -5,6 +5,7 @@ import {
   type RefObject,
   useCallback,
   useEffect,
+  useLayoutEffect,
   useRef,
   useState,
 } from "react";
@@ -137,6 +138,74 @@ export function StoryFrameChrome({
         <p className="story-foot-note">músicas mutantes</p>
       </div>
     </>
+  );
+}
+
+function fitTextSize(
+  el: HTMLElement,
+  maxFontSize: number,
+  minFontSize: number,
+  mode: "width" | "box",
+) {
+  let size = maxFontSize;
+  el.style.fontSize = `${size}px`;
+
+  if (mode === "width") {
+    const available = el.clientWidth;
+    const needed = el.scrollWidth;
+    if (needed > available && available > 0) {
+      size = Math.max(minFontSize, (maxFontSize * available * 0.98) / needed);
+      el.style.fontSize = `${size}px`;
+    }
+    return;
+  }
+
+  const parent = el.parentElement;
+  const maxH = parent?.clientHeight ?? el.clientHeight;
+  const maxW = parent?.clientWidth ?? el.clientWidth;
+  while (
+    size > minFontSize &&
+    (el.scrollHeight > maxH || el.scrollWidth > maxW)
+  ) {
+    size -= 1;
+    el.style.fontSize = `${size}px`;
+  }
+}
+
+export function StoryFitText({
+  children,
+  className,
+  maxFontSize,
+  minFontSize,
+  mode = "width",
+}: {
+  children: string;
+  className?: string;
+  maxFontSize: number;
+  minFontSize: number;
+  mode?: "width" | "box";
+}) {
+  const ref = useRef<HTMLParagraphElement>(null);
+
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    let cancelled = false;
+    const fit = () => {
+      if (!cancelled) fitTextSize(el, maxFontSize, minFontSize, mode);
+    };
+    fit();
+    void document.fonts?.ready.then(fit);
+    return () => {
+      cancelled = true;
+    };
+  }, [children, maxFontSize, minFontSize, mode]);
+
+  return (
+    <p ref={ref} className={className}>
+      {children}
+    </p>
   );
 }
 

@@ -5,6 +5,7 @@ import { CATALOG } from "@/lib/catalog";
 import { slugifyStoryName } from "@/lib/story";
 import {
   StoryExportButton,
+  StoryFitText,
   StoryFrameChrome,
   StoryPreview,
   StoryZoomField,
@@ -115,7 +116,13 @@ export function StoryTemplate() {
 
           <div className="story-meta">
             <p className="story-artist">{artist || "artista"}</p>
-            <p className="story-release-title">{title || "título"}</p>
+            <StoryFitText
+              className="story-release-title"
+              maxFontSize={64}
+              minFontSize={28}
+            >
+              {title || "título"}
+            </StoryFitText>
           </div>
         </StoryFrameChrome>
       </StoryPreview>
