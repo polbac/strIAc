@@ -2,7 +2,7 @@
 
 import { use } from "react";
 import { notFound } from "next/navigation";
-import { SiteHeader, DocsNav } from "@/components/SiteChrome";
+import { AppChrome } from "@/components/SiteChrome";
 import { DocViewer } from "@/components/DocViewer";
 import { DOC_NAV } from "@/lib/docs";
 
@@ -19,13 +19,8 @@ export default function DocsSlugPage({ params }: Props) {
   }
 
   return (
-    <div className="page-shell docs-shell">
-      <div className="atmosphere atmosphere-docs" aria-hidden />
-      <SiteHeader />
-      <div className="docs-layout">
-        <DocsNav />
-        <DocViewer slug={slug} />
-      </div>
-    </div>
+    <AppChrome>
+      <DocViewer slug={slug} />
+    </AppChrome>
   );
 }

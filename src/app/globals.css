@@ -246,6 +246,10 @@ a {
   min-height: calc(100vh - 4.5rem);
 }
 
+.docs-layout > .story-tool {
+  min-width: 0;
+}
+
 .docs-nav {
   padding: 1.5rem 1.25rem 2rem;
   border-right: 1px solid var(--line);
@@ -562,7 +566,8 @@ a {
 }
 
 .story-field input,
-.story-field select {
+.story-field select,
+.story-field textarea {
   width: 100%;
   min-height: 2.5rem;
   padding: 0.45rem 0.65rem;
@@ -573,6 +578,12 @@ a {
   font-size: 0.95rem;
   text-transform: none;
   letter-spacing: 0;
+}
+
+.story-field textarea {
+  min-height: 10rem;
+  resize: vertical;
+  line-height: 1.45;
 }
 
 .story-field input[type="file"] {
@@ -693,6 +704,34 @@ a {
   font-size: 32px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+}
+
+.story-text-slot {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 0;
+  padding: 48px 24px;
+  overflow: hidden;
+}
+
+.story-text-body {
+  margin: 0;
+  max-width: 860px;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  text-align: center;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: #fff;
+}
+
+.story-text-body.is-placeholder {
+  color: #555;
 }
 
 .story-meta {

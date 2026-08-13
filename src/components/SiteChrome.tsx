@@ -3,7 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import type { ReactNode } from "react";
 import { DOC_NAV } from "@/lib/docs";
+import { GENERATOR_NAV } from "@/lib/generators";
 
 function docsHref(slug: string) {
   return slug === "index" ? "/docs" : `/docs/${slug}`;
@@ -32,7 +34,7 @@ export function SiteHeader() {
           href="/tools/story"
           className={pathname.startsWith("/tools") ? "is-active" : undefined}
         >
-          story
+          generador
         </Link>
         <a href="https://strlacrecords.bandcamp.com/" target="_blank" rel="noreferrer">
           bandcamp
@@ -47,6 +49,28 @@ export function SiteHeader() {
 
 export function DocsNav() {
   const pathname = usePathname();
+  const inGenerator = pathname.startsWith("/tools");
+
+  if (inGenerator) {
+    return (
+      <nav className="docs-nav" aria-label="Generador">
+        <p className="docs-nav-label">Generador</p>
+        <ul>
+          {GENERATOR_NAV.map((item) => {
+            const active = pathname === item.href;
+            return (
+              <li key={item.href}>
+                <Link href={item.href} className={active ? "is-active" : undefined}>
+                  <span className="docs-nav-title">{item.title}</span>
+                  <span className="docs-nav-blurb">{item.blurb}</span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+    );
+  }
 
   return (
     <nav className="docs-nav" aria-label="Documentación">
@@ -70,5 +94,18 @@ export function DocsNav() {
         })}
       </ul>
     </nav>
+  );
+}
+
+export function AppChrome({ children }: { children: ReactNode }) {
+  return (
+    <div className="page-shell docs-shell">
+      <div className="atmosphere atmosphere-docs" aria-hidden />
+      <SiteHeader />
+      <div className="docs-layout">
+        <DocsNav />
+        {children}
+      </div>
+    </div>
   );
 }
