@@ -13,8 +13,9 @@ Usar estos docs para humanos y para agentes (el skill de Cursor los lee desde aq
 5. [Workflows](workflows.md) — proceso de release: contacto → construcción → digital / web / físico (+ evento)
 6. [Mantenimiento](mantenimiento.md) — tareas recurrentes (stories 2× semana, newsletter, etc.)
 7. [Radio](radio.md) — señal propia: loop + invocaciones de artistas (Navidrome / TBD)
-8. [Automatización](automatizacion.md) — mapa de automatizaciones previstas
-9. [Networking](networking.md) — sellos, colectivos y plataformas afines
+8. [Taller: Sistemas de Escucha Mutante](taller-escucha-mutante.md) — auto-hosting doméstico (Navidrome + Tailscale)
+9. [Automatización](automatizacion.md) — mapa de automatizaciones previstas
+10. [Networking](networking.md) — sellos, colectivos y plataformas afines
 
 ## Recursos del repo
 
@@ -32,6 +33,7 @@ Usar estos docs para humanos y para agentes (el skill de Cursor los lee desde aq
 - Cambio en el proceso de release → [workflows.md](workflows.md)
 - Tareas recurrentes → [mantenimiento.md](mantenimiento.md)
 - Radio / streaming → [radio.md](radio.md)
+- Taller de auto-hosting → [taller-escucha-mutante.md](taller-escucha-mutante.md)
 - Un release nuevo → actualizar [catalogo.md](catalogo.md) y `src/lib/catalog.ts`
 - Cambio de voz/visual → [voz.md](voz.md) / [visual.md](visual.md) + `brand/tokens.yaml`
 - Nuevo flujo automatizado → [automatizacion.md](automatizacion.md)

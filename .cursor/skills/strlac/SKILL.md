@@ -27,6 +27,7 @@ La documentación canónica está en `docs/` del repo. **Leer desde ahí** (no d
 | [docs/workflows.md](../../../docs/workflows.md) | Intake, assets, publicación |
 | [docs/mantenimiento.md](../../../docs/mantenimiento.md) | Stories, newsletter y tareas recurrentes |
 | [docs/radio.md](../../../docs/radio.md) | Loop + invocaciones · servidor propio |
+| [docs/taller-escucha-mutante.md](../../../docs/taller-escucha-mutante.md) | Taller de auto-hosting (Navidrome + Tailscale) |
 | [docs/automatizacion.md](../../../docs/automatizacion.md) | Unidades a automatizar |
 | [docs/networking.md](../../../docs/networking.md) | Sellos, colectivos y nodos afines |
 | [brand/tokens.yaml](../../../brand/tokens.yaml) | Colores / tipo / logo (WIP) |

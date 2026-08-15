@@ -27,7 +27,7 @@ Encaja con el modelo strlac (construcción conjunta, capas, mutación): la radio
 
 ## Stack previsto (borrador)
 
-Dirección actual: **servidor propio**, explorando **[Navidrome](https://www.navidrome.org/)** como núcleo de biblioteca / streaming / playlists.
+Dirección actual: **servidor propio**, explorando **[Navidrome](https://www.navidrome.org/)** como núcleo de biblioteca / streaming / playlists. El montaje doméstico de ese núcleo se diseña en el [taller Sistemas de Escucha Mutante](taller-escucha-mutante.md).
 
 | Capa | Rol | Notas |
 |------|-----|--------|
@@ -71,6 +71,7 @@ Invocación radio
 | Stories 2× semana | Pueden apuntar a “ahora en la radio” o a un track del loop |
 | Newsletter | Bloque “al aire” / próxima invocación (*cuando exista*) |
 | Evento (release) | Una invocación puede ser el evento, o complementarlo |
+| [Taller](taller-escucha-mutante.md) | Enseña a montar el nodo Navidrome+Tailscale en casa |
 
 ## Decisiones pendientes
 

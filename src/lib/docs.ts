@@ -46,6 +46,11 @@ export const DOC_NAV: DocNavItem[] = [
     blurb: "Loop + invocaciones · servidor propio",
   },
   {
+    slug: "taller-escucha-mutante",
+    title: "Taller",
+    blurb: "Sistemas de Escucha Mutante · nodo doméstico",
+  },
+  {
     slug: "automatizacion",
     title: "Automatización",
     blurb: "Unidades a automatizar",
