@@ -15,10 +15,16 @@ import {
 export function StoryTextTemplate() {
   const [text, setText] = useState("");
   const [previewScale, setPreviewScale] = useState(0.32);
+  const [textMaxFontSize, setTextMaxFontSize] = useState(64);
+  const [textYOffset, setTextYOffset] = useState(0);
   const logoSrc = useStoryLogo();
 
   const fileName = `strlac-story-${slugifyStoryName(text.split("\n")[0] ?? "") || "texto"}.png`;
   const { frameRef, exporting, exportError, exportPng } = useStoryExport(fileName);
+  const textMinFontSize = Math.min(
+    28,
+    Math.max(12, Math.round(textMaxFontSize * 0.45)),
+  );
 
   return (
     <div className="story-tool">
@@ -39,6 +45,30 @@ export function StoryTextTemplate() {
           />
         </label>
 
+        <label className="story-field">
+          <span>Tamaño texto ({textMaxFontSize}px)</span>
+          <input
+            type="range"
+            min={22}
+            max={120}
+            step={1}
+            value={textMaxFontSize}
+            onChange={(e) => setTextMaxFontSize(Number(e.target.value))}
+          />
+        </label>
+
+        <label className="story-field">
+          <span>Posición vertical ({textYOffset}px)</span>
+          <input
+            type="range"
+            min={-720}
+            max={720}
+            step={10}
+            value={textYOffset}
+            onChange={(e) => setTextYOffset(Number(e.target.value))}
+          />
+        </label>
+
         <StoryZoomField value={previewScale} onChange={setPreviewScale} />
         <StoryExportButton
           exporting={exporting}
@@ -56,11 +86,14 @@ export function StoryTextTemplate() {
 
       <StoryPreview previewScale={previewScale} frameRef={frameRef}>
         <StoryFrameChrome logoSrc={logoSrc}>
-          <div className="story-text-slot">
+          <div
+            className="story-text-slot"
+            style={{ transform: `translateY(${textYOffset}px)` }}
+          >
             <StoryFitText
               className={`story-text-body${text ? "" : " is-placeholder"}`}
-              maxFontSize={64}
-              minFontSize={28}
+              maxFontSize={textMaxFontSize}
+              minFontSize={textMinFontSize}
               mode="box"
             >
               {text || "tu texto"}
